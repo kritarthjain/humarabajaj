@@ -1,4 +1,4 @@
-<?php include 'dbconnect.php'; ?>
+<?php include 'dbfunctions.php'; ?>
 <?php include 'common.php' ?>
 
 <?php
@@ -36,22 +36,6 @@ function test_input($data) {
   return $data;
 }
 
-function addWordToDb($word, $definition, $examples) {
-	// escape variables for security
-	global $db;
-	$word = mysqli_real_escape_string($db, $word);
-	$definition = mysqli_real_escape_string($db, $definition);
-	$examples = mysqli_real_escape_string($db, $examples);
-
-	$sql="INSERT INTO `simpletable` (word, definition, dateAdded, examples)
-				VALUES ('$word', '$definition', now(), '$examples');";
-
-	if (!mysqli_query($db,$sql)) {
-  		die('Error: ' . mysqli_error($db));
-  		return false;
-	}
-	return true;
-}
 ?>
 
 <html>
