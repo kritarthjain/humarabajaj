@@ -1,0 +1,41 @@
+/*#greeting {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  margin: 15px;
+}
+*/
+
+.navbar {
+	background-color: #490A3D;
+}
+.navbar .navbar-brand{
+	color: white;
+}
+.navbar-brand{
+	font-size: 30px;
+}
+
+.navbar .navbar-nav>li>a{
+	font-size: 20px;
+	color: white;
+}
+
+
+
+
+.panel{
+	margin-top: 20px;
+	margin-right:50px;
+	margin-left:50px;
+
+}
+
+.panel-primary>.panel-heading{
+	background-color: #BD1550 ;
+	border-color: #BD1550;
+}
+.panel-primary{
+	border-color: #BD1550;
+	width=70%;
+}
