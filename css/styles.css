@@ -5,7 +5,9 @@
   margin: 15px;
 }
 */
-
+body{
+	background-color: #4C1D6A;
+}
 .navbar {
 	background-color: #490A3D;
 }
@@ -38,4 +40,74 @@
 .panel-primary{
 	border-color: #BD1550;
 	width=70%;
+}
+.input-group-lg{
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 5%;
+	width: 50%;
+}
+.bol-guru-logo{
+	margin-top:10%;
+}
+p.bol-guru-text{
+	margin-top: 5%;
+	margin-left:25%;
+	float:left;
+	font-family: trebuchet;
+	font-size:200%;
+    color: yellow;
+}
+
+.landing-media-object{
+	margin-left:25%;
+	float:left;
+	width:15%;
+	height:15%;
+
+}
+
+.btn-lg.search-button{
+	background-color: #F3CE00;
+	width:48%;
+}
+
+
+.btn-lg.add-words-button{
+	background-color: #5eb82a;
+	width:48%;
+}
+
+.landing-page-button-group{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+	width:50%;
+	padding:2%;
+
+}
+
+.form-control.search-box{
+	margin-left: 25%;
+	width:50%;
+	height: 30%;
+	font-size: 24px;
+
+}
+
+.panel.panel-default{
+	background:#F07D00;
+	margin-left:20%;
+	margin-right: 20%;
+}
+
+.panel>.panel-footer{
+	background: #D65500;
+}
+.panel>.panel-heading{
+	background: #D65500;
+}
+.word-card-title{
+	margin-top:0px;
+	margin-botton:0px;
 }
