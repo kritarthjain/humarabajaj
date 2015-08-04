@@ -1,0 +1,18 @@
+db = bolguru
+collection = simpleCollection
+
+Document:
+{
+word : "",
+definition : "",
+dateAdded : "",
+upVotes : 0,
+downVotes : 0;
+examples : ""
+
+FUTURE:
+userId :
+dateModified :
+upVotesUsers :
+downVotesUsers :
+}

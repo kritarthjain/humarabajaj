@@ -23,9 +23,6 @@ body{
 	color: white;
 }
 
-
-
-
 .panel{
 	margin-top: 20px;
 	margin-right:50px;
@@ -92,7 +89,13 @@ p.bol-guru-text{
 	width:50%;
 	height: 30%;
 	font-size: 24px;
+}
 
+.search-box{
+	margin-left: 25%;
+	width:50%;
+	height: 40px;
+	font-size: 24px;
 }
 
 .panel.panel-default{
