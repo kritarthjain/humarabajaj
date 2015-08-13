@@ -30,4 +30,5 @@
 
 	# Change whether to connect to AWS or local mysql server
 	$db = connectAWSDb();
+	//$memc = new Memcached();
 ?>

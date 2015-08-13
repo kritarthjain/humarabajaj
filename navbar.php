@@ -1,11 +1,11 @@
-<ul>
-	<li style="display:inline"><?php include 'search.php'; ?></li>
-	<li style="display:inline"><a href="result.php?word=">Stream</a></li>
-	<li style="display:inline"><a href="addaword.php">Add a Word</a></li>
-	<?php
-	foreach (range('A', 'Z') as $c) {
-		echo '<li style="display:inline">&nbsp;&nbsp;<a href="allwords.php?start='; echo $c; echo '">';
-		echo $c; echo '</a>&nbsp;&nbsp;*</li>';
-	} ?>
-	<li style="display:inline"><a href="allwords.php">All</a></li>
-</ul>
+<div class="index-navbar no-decoration">
+	<ul class="navbar-list" align="center">
+		<li style="display:inline"><a href="stream.php">Streams</a></li> &nbsp;--
+		<?php
+		foreach (range('A', 'Z') as $c) {
+			echo '<li style="display:inline">&nbsp;&nbsp;<a href="searchresult.php?start='; echo $c; echo '">';
+			echo $c; echo '</a>&nbsp;&nbsp;-</li>';
+		} ?>
+		<li style="display:inline"><a class="no-decoration" href="searchresult.php">All</a></li>
+	</ul>
+</div>

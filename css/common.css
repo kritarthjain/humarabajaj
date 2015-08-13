@@ -1,5 +1,5 @@
 body {
-	background-color: #4C1D6A;
+	background-color: #5E357A;
 	font-family: "Trebuchet MS";
 	color: white;
 }
@@ -8,38 +8,154 @@ a {
 	color: white;
 }
 
-/* HEADER */
+/* COLORS */
+
+.primary-color {
+
+}
+
+.secondary-color {
+
+}
+
+/* HREF DECORATION */
+
+.no-decoration a:link {
+	text-decoration: none;
+}
+.no-decoration a:visited {
+    text-decoration: none;
+}
+.no-decoration a:hover {
+    text-decoration: none;
+}
+
+/* HOME PAGE */
+
+.home-page {
+	display: table;
+	text-align: center;
+	width: 100%;
+	height: 80%;
+}
+
+.home-page-vertical-align {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+img.home-page-title {
+	height: 150px;
+}
+
+/* SHARED ATTRIBUTES */
+
+.column-background {
+	width: 60%;
+	min-width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #764299;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	box-shadow: 0px 0px 2px #000000;
+}
+
+/* SITE HEADER */
 
 .site-header {
-	margin-left: 40%;
+	display: block;
+	margin-left: auto;
 	margin-right: auto;
-	width: 30%;
+	margin-top: 10pt;
+	margin-bottom: 20pt;
+	height: inherit;
 }
 
-.site-header a:link {
-    text-decoration: none;
-}
-.site-header a:visited {
-    text-decoration: none;
-}
-.site-header a:hover {
-    text-decoration: none;
+/* PAGE HEADER */
+
+.my-page-header {
+	background-color: #4C1D6A;
+	width: 100%;
+	height: inherit;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 0px;
+	vertical-align: middle;
 }
 
+img.page-title {
+	height: 90px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.my-image-title {
+	height: inherit;
+	display: inline-block;
+	float: left;
+	padding-left: 60px;
+	vertical-align: middle;
+}
+
+.my-search-title {
+	height: inherit;
+	display: inline-block;
+	float: right;
+	padding-right: 60px;
+	padding-top: 15px;
+	vertical-align: middle;
+}
+
+table.my-header-table {
+	width:100%;
+	margin-bottom: -10px;
+	margin-top: -20px;
+}
+
+/* NAVBAR */
+
+.index-navbar {
+	font-size: 16px;
+	margin-bottom: -15px;
+}
+
+.navbar-list {
+	-webkit-padding-start: 0px;
+}
 /* ADD A WORD */
 
 .addaword-form {
-	width: 60%;
-	margin-left: 20%;
-	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 20px;
+	padding-bottom: 100px;
 }
 
-/* SEARCH BOX */
+.addaword-title {
+	color: #DBBC37;
+	font-size: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.addaword-status {
+	color: #DBBC37;
+	font-size: 36px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.addaword-btn-submit {
+	padding-left: 60px;
+	padding-right: 60px;
+	font-size: 16px;
+}
+
+/* SEARCH */
 
 .search-box {
-	margin-left: 30%;
-	margin-right: auto;
-	width:100px;
 	height: 40px;
 	font-size: 24px;
 }
@@ -47,5 +163,42 @@ a {
 .search-button {
 	background-color: #F3CE00;
 	width: 100px;
+}
+
+.option-button {
 	height: 40px;
+	font-size: 20px;
+}
+
+/* SEARCH RESULT */
+
+.search-results {
+	font-size: 16px;
+	padding-top: 20px;
+}
+
+/* RESULTS */
+
+.result-title {
+	/*color: #DBBC37;*/
+	font-size: 36px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.no-result-div {
+	text-align: center;
+	font-size: 24px;
+}
+
+/* STREAM */
+
+.stream-div {
+	
+}
+
+.stream-orderby {
+	padding-top: 20px;
+	font-size: 18px;
 }

@@ -14,79 +14,147 @@ p, h2 {
 .card_yellow .card_footer { background-color: #DBBC37; }
 .card_yellow .card_like   { background-color: #C2962B; }
 .card_yellow .card_unlike { background-color: #A27420; }
+/*.card_yellow .card_header      { color: #118730; }*/
+.card_yellow .card_definition  { color: #DC6A23; }
+.card_yellow .card_examples    { color: #1167BD; }
+.card_yellow .card_information { color: #118730; }
 
 .card_blue .card_main   { background-color: #56A9F6; }
 .card_blue .card_header { background-color: #1A5084; }
 .card_blue .card_footer { background-color: #1167BD; }
 .card_blue .card_like   { background-color: #1A5084; }
 .card_blue .card_unlike { background-color: #022550; }
+/*.card_blue .card_header      { color: #F4D23E; }*/
+.card_blue .card_definition  { color: #F4D23E; }
+.card_blue .card_examples    { color: #C62817; }
+.card_blue .card_information { color: #115C1D; }
 
 .card_orange .card_main   { background-color: #F18F2E; }
 .card_orange .card_header { background-color: #BC5B1D; }
 .card_orange .card_footer { background-color: #DC6A23; }
 .card_orange .card_like   { background-color: #BC5B1D; }
 .card_orange .card_unlike { background-color: #914614; }
+/*.card_orange .card_header      { color: #1A5084; }*/
+.card_orange .card_definition  { color: #F4D23E; }
+.card_orange .card_examples    { color: #C62817; }
+.card_orange .card_information { color: #1A5084; }
 
 .card_red .card_main   { background-color: #EA5E5B; }
 .card_red .card_header { background-color: #84120A; }
 .card_red .card_footer { background-color: #C62817; }
 .card_red .card_like   { background-color: #84120A; }
 .card_red .card_unlike { background-color: #550809; }
+/*.card_red .card_header      { color: #118730; }*/
+.card_red .card_definition  { color: #764299; }
+.card_red .card_examples    { color: #DBBC37; }
+.card_red .card_information { color: #118730; }
 
 .card_green .card_main   { background-color: #72BE49; }
 .card_green .card_header { background-color: #115C1D; }
 .card_green .card_footer { background-color: #118730; }
 .card_green .card_like   { background-color: #115C1D; }
 .card_green .card_unlike { background-color: #09400D; }
+/*.card_green .card_header      { color: #84120A; }*/
+.card_green .card_definition  { color: #DC6A23; }
+.card_green .card_examples    { color: #1A5084; }
+.card_green .card_information { color: #84120A; }
 
 .card_purple .card_main   { background-color: #B26EDF; }
 .card_purple .card_header { background-color: #5E357A; }
 .card_purple .card_footer { background-color: #764299; }
 .card_purple .card_like   { background-color: #5E357A; }
 .card_purple .card_unlike { background-color: #3B214C; }
+/*.card_purple .card_header      { color: #DBBC37; }*/
+.card_purple .card_definition  { color: #72BE49; }
+.card_purple .card_examples    { color: #C62817; }
+.card_purple .card_information { color: #DBBC37; }
 
 .card_main {
-	box-shadow: 5px 5px 5px #000000;
-	width: 400px;
+	box-shadow: 0px 0px 2px #000000;
+	width: 500px;
+	min-width: 80px;
 	font-family: "Trebuchet MS";
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 5px;
 }
 
 .card_header {
 	width: inherit;
+	border-radius: 5px 5px 0px 0px;
 }
 
 .card_footer {
 	width: inherit;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.card_information {
+	font-style: italic;
+	text-align: right;
+}
+
+.card_button {
+	border: none;
+	outline: none;
+	color: white;
 }
 
 .card_like {
-	padding-left: 10px;
-	padding-right: 20px;
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	border: none;
 	outline: none;
+	color: white;
 }
 
 .card_unlike {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-left: -10px;
 	border: none;
 	outline: none;
+	color: white;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.card_action_button {
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.card_quote {
+	margin-left: 20px;
 }
 
 /* Text styling */
 
-div.card_definition {
+div.card_header {
+	padding-left: 20px;
+}
 
+div.card_definition {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 div.card_examples {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
+div.card_examples_title {
+	/*color: white;*/
 }
 
 div.card_information {
-
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	font-size: 12px;
 }

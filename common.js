@@ -22,10 +22,15 @@ function vote(cardId, id, vote, count) {
 		}
 	}
 	var buttonId = cardId + "_" + ((vote >= 0) ? "like" : "unlike");
-	var prefix = (vote >= 0) ? "Like:" : "Unlike:";
+	var prefix = (vote >= 0) ? "<span class='glyphicon glyphicon-thumbs-up'></span> " 
+							 : "<span class='glyphicon glyphicon-thumbs-down'></span> ";
 	xmlhttp.onreadystatechange=function() {
 		document.getElementById(buttonId).innerHTML = prefix + (count + 1);
 	}
 	xmlhttp.open("GET", "vote.php?id=" + id + "&vote=" + vote, true);
 	xmlhttp.send();
+}
+
+function shareLink(text) {
+  alert("Share Link: www.bolguru.in/result.php?id=" + text);
 }
