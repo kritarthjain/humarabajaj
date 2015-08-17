@@ -77,6 +77,7 @@
         global $db;
         global $PRINT_CARDS, $PRINT_LIST, $PRINT_NONE;
         $selection = $distinct ? "DISTINCT(word)" : "*";
+        //$exp = str_replace('_', ' ', $exp);
         $query = getQuery($selection, $exp, $orderBy);
         $queryResult = mysqli_query($db, $query);
         if ($printType != $PRINT_NONE) {
@@ -117,7 +118,7 @@
         return mysqli_insert_id($db);
     }
 
-    #******* MYSQL QUERIES WITH CACHING ******#
+    #******* MYSQL QUERIES WITH CACHING - TODO!!!!!! ******#
 
     # Return: search query result
     function sqlSelect($query) {

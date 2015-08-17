@@ -34,3 +34,8 @@ function vote(cardId, id, vote, count) {
 function shareLink(text) {
   alert("Share Link: www.bolguru.in/result.php?id=" + text);
 }
+
+function addaword() {
+	var enteredText= document.getElementById("search-field").value;
+	window.location.assign('addaword.php?word=' + enteredText);
+}

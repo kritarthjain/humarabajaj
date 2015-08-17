@@ -1,8 +1,7 @@
-<div class="search" align="center">
-	<form action="searchresult.php" method="get" class="form-inline">
-		<input type="text" class="form-control search-box" name="word" placeholder="Search...">
-		<input type="submit" class="btn btn-primary option-button search-button" value="Go">
-		<button type="button" class="btn btn-success option-button" onclick="location.href='addaword.php'">Add a Word</button>
-		<!--<button type="button" class="btn btn-info option-button" onclick="location.href='result.php?word='">Stream</button>-->
-	</form>
-</div>
+<form class="form-inline" action="searchresult.php" method="get" role="search">
+  <div class="form-group" align="center">
+    <input type="text" id="search-field" class="form-control my-search-box" name="word" placeholder="Enter word...">
+  </div>
+  <button type="submit" class="btn btn-primary btn-color-yellow">Search</button>
+  <button type="button" class="btn btn-success" onclick="addaword()">Add Word</button>
+</form>

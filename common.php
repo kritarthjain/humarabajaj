@@ -4,8 +4,9 @@
     $row;
 
 	function echoWordLink($word) {
+        $wordLink = str_replace(' ', '_', $word);
 		echo '<a href=result.php?word=';
-		echo $word; echo '>';
+		echo $wordLink; echo '>';
 		echo $word; echo '</a>';
 	}
 
@@ -86,7 +87,7 @@
                             <div style="display: inline">
                                 <span class="card_button card_action_button no-decoration"><a href="#" onClick="shareLink('; echo $defRow['id']; echo '); return false;"><span title="Share" class="glyphicon glyphicon-share-alt"></span></a></span>
                                 <span class="card_button card_action_button no-decoration"><a href="addaword.php?word='; echo $defRow['word']; echo '"><span title="Add new definition" class="glyphicon glyphicon-plus"></span></a></span>
-                                <span class="card_button card_action_button no-decoration"><a href="addaword.php?word='; echo $defRow['word']; echo '"><span title="Report" class="glyphicon glyphicon-exclamation-sign"></span></a></span>
+                                <span class="card_button card_action_button no-decoration"><a href="'; echo $defRow['word']; echo '"><span title="Report" class="glyphicon glyphicon-exclamation-sign"></span></a></span>
                                 <button class="card_button card_like" id="'; echo $cardId; echo '_like'; echo '" onClick="vote(\''; echo $cardId; echo '\', '; echo $defRow['id'];
                                                             echo ', 1, '; echo $defRow['upVotes']; echo')"><span title="Like" class="glyphicon glyphicon-thumbs-up"></span> '; echo $defRow['upVotes']; echo '</span>
                                 <button class="card_button card_unlike" id="'; echo $cardId; echo '_unlike'; echo '"onClick="vote(\''; echo $cardId; echo '\', '; echo $defRow['id'];
